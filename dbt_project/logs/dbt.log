@@ -1,0 +1,374 @@
+[0m03:29:22.842544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4DE166120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4DBD30CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E0AB39D0>]}
+
+
+============================== 03:29:22.853915 | a2767c2b-5d9e-4e34-9949-d3a572073905 ==============================
+[0m03:29:22.853915 [info ] [MainThread]: Running with dbt=1.12.6
+[0m03:29:22.855017 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\USER\\Downloads\\data_processing_miniproject_lengkap\\data_processing_miniproject\\dbt_project\\logs'}
+[0m03:29:22.933614 [info ] [MainThread]: dbt version: 1.12.6
+[0m03:29:22.934485 [info ] [MainThread]: python version: 3.14.4
+[0m03:29:22.935256 [info ] [MainThread]: python path: C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\.venv\Scripts\python.exe
+[0m03:29:22.935828 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m03:29:23.419822 [info ] [MainThread]: Using profiles dir at .
+[0m03:29:23.421126 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m03:29:23.422704 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\dbt_project.yml
+[0m03:29:23.435502 [info ] [MainThread]: adapter type: duckdb
+[0m03:29:23.436809 [info ] [MainThread]: adapter version: 1.11.0
+[0m03:29:23.818169 [info ] [MainThread]: Configuration:
+[0m03:29:23.819253 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:29:23.820296 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m03:29:23.821317 [info ] [MainThread]: Required dependencies:
+[0m03:29:23.822265 [debug] [MainThread]: Executing "git --help"
+[0m03:29:23.927431 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:29:23.929131 [debug] [MainThread]: STDERR: "b''"
+[0m03:29:23.930816 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:29:23.932866 [info ] [MainThread]: Connection:
+[0m03:29:23.934650 [info ] [MainThread]:   database: warehouse
+[0m03:29:23.936373 [info ] [MainThread]:   schema: main
+[0m03:29:23.937940 [info ] [MainThread]:   path: C:/Users/USER/Downloads/data_processing_miniproject_lengkap/data_processing_miniproject/data/warehouse.duckdb
+[0m03:29:23.939761 [info ] [MainThread]:   config_options: None
+[0m03:29:23.941439 [info ] [MainThread]:   extensions: None
+[0m03:29:23.942965 [info ] [MainThread]:   settings: {}
+[0m03:29:23.944838 [info ] [MainThread]:   external_root: .
+[0m03:29:23.946536 [info ] [MainThread]:   use_credential_provider: None
+[0m03:29:23.947763 [info ] [MainThread]:   attach: None
+[0m03:29:23.949962 [info ] [MainThread]:   filesystems: None
+[0m03:29:23.951436 [info ] [MainThread]:   remote: None
+[0m03:29:23.952789 [info ] [MainThread]:   plugins: None
+[0m03:29:23.953991 [info ] [MainThread]:   disable_transactions: False
+[0m03:29:23.955550 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m03:29:25.597538 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m03:29:30.106504 [debug] [MainThread]: Using duckdb connection "debug"
+[0m03:29:30.106933 [debug] [MainThread]: On debug: select 1 as id
+[0m03:29:30.107210 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:29:30.304234 [debug] [MainThread]: SQL status: OK in 0.197 seconds
+[0m03:29:30.305426 [debug] [MainThread]: On debug: Close
+[0m03:29:30.306457 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:29:30.307216 [info ] [MainThread]: [32mAll checks passed![0m
+[0m03:29:30.309322 [debug] [MainThread]: Command `dbt debug` succeeded at 03:29:30.308778 after 7.78 seconds
+[0m03:29:30.310249 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:29:30.311117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E0F30B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E105FAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E0F65AE0>]}
+[0m03:29:30.311875 [debug] [MainThread]: Flushing usage events
+[0m03:29:31.865486 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:30:29.989791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205E6C96120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205E486CCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205E9623890>]}
+
+
+============================== 03:30:30.000145 | 2853eaa3-4e8a-4b87-92e1-389c6c9c4baa ==============================
+[0m03:30:30.000145 [info ] [MainThread]: Running with dbt=1.12.6
+[0m03:30:30.001382 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs generate --profiles-dir .', 'log_path': 'C:\\Users\\USER\\Downloads\\data_processing_miniproject_lengkap\\data_processing_miniproject\\dbt_project\\logs'}
+[0m03:30:30.861652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205E991BE10>]}
+[0m03:30:30.935462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205E9B0F790>]}
+[0m03:30:30.941694 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m03:30:31.703166 [debug] [MainThread]: checksum: d18706c5797b7083b6a4b6c7ca29f9f466552888e7920d5058adcdcf2243d553, vars: {}, profile: orders_analytics, target: dev, version: 1.12.6
+[0m03:30:31.704979 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:30:31.705732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205E99FE750>]}
+[0m03:30:35.019457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EB87CE60>]}
+[0m03:30:35.072133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EBC975B0>]}
+[0m03:30:35.072656 [info ] [MainThread]: Found 5 models, 16 data tests, 500 macros
+[0m03:30:35.073172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EBD71230>]}
+[0m03:30:35.075557 [info ] [MainThread]: 
+[0m03:30:35.076382 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:30:35.077321 [info ] [MainThread]: 
+[0m03:30:35.078107 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m03:30:35.082760 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main'
+[0m03:30:35.341974 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m03:30:35.342425 [debug] [ThreadPool]: On list_warehouse_main: BEGIN
+[0m03:30:35.342710 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:30:35.540417 [debug] [ThreadPool]: SQL status: OK in 0.198 seconds
+[0m03:30:35.541010 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m03:30:35.541515 [debug] [ThreadPool]: On list_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "orders_analytics", "target_name": "dev", "connection_name": "list_warehouse_main"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m03:30:35.595671 [debug] [ThreadPool]: SQL status: OK in 0.053 seconds
+[0m03:30:35.597932 [debug] [ThreadPool]: On list_warehouse_main: ROLLBACK
+[0m03:30:35.599271 [debug] [ThreadPool]: On list_warehouse_main: Close
+[0m03:30:35.601455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2853eaa3-4e8a-4b87-92e1-389c6c9c4baa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EBCA9CD0>]}
+[0m03:30:35.613021 [debug] [Thread-1 (]: Began running node model.orders_analytics.stg_orders
+[0m03:30:35.613915 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.orders_analytics.stg_orders'
+[0m03:30:35.614499 [debug] [Thread-1 (]: Began compiling node model.orders_analytics.stg_orders
+[0m03:30:35.622863 [debug] [Thread-1 (]: Writing injected SQL for node "model.orders_analytics.stg_orders"
+[0m03:30:35.630392 [debug] [Thread-1 (]: Began executing node model.orders_analytics.stg_orders
+[0m03:30:35.631609 [debug] [Thread-1 (]: Finished running node model.orders_analytics.stg_orders
+[0m03:30:35.632851 [debug] [Thread-3 (]: Began running node model.orders_analytics.dim_product_category
+[0m03:30:35.633587 [debug] [Thread-1 (]: Began running node test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64
+[0m03:30:35.634267 [debug] [Thread-4 (]: Began running node test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5
+[0m03:30:35.635001 [debug] [Thread-2 (]: Began running node model.orders_analytics.dim_customer
+[0m03:30:35.636046 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.orders_analytics.dim_product_category'
+[0m03:30:35.637114 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.orders_analytics.stg_orders, now test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64)
+[0m03:30:35.638277 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5'
+[0m03:30:35.639336 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.orders_analytics.dim_customer'
+[0m03:30:35.640094 [debug] [Thread-3 (]: Began compiling node model.orders_analytics.dim_product_category
+[0m03:30:35.640776 [debug] [Thread-1 (]: Began compiling node test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64
+[0m03:30:35.641428 [debug] [Thread-4 (]: Began compiling node test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5
+[0m03:30:35.642206 [debug] [Thread-2 (]: Began compiling node model.orders_analytics.dim_customer
+[0m03:30:35.645877 [debug] [Thread-3 (]: Writing injected SQL for node "model.orders_analytics.dim_product_category"
+[0m03:30:35.665178 [debug] [Thread-1 (]: Writing injected SQL for node "test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64"
+[0m03:30:35.675987 [debug] [Thread-4 (]: Writing injected SQL for node "test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m03:30:35.679970 [debug] [Thread-2 (]: Writing injected SQL for node "model.orders_analytics.dim_customer"
+[0m03:30:35.685173 [debug] [Thread-3 (]: Began executing node model.orders_analytics.dim_product_category
+[0m03:30:35.687819 [debug] [Thread-3 (]: Finished running node model.orders_analytics.dim_product_category
+[0m03:30:35.689544 [debug] [Thread-3 (]: Began running node test.orders_analytics.not_null_stg_orders_product_category.5f48260899
+[0m03:30:35.690824 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.orders_analytics.dim_product_category, now test.orders_analytics.not_null_stg_orders_product_category.5f48260899)
+[0m03:30:35.691851 [debug] [Thread-1 (]: Began executing node test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64
+[0m03:30:35.692962 [debug] [Thread-2 (]: Began executing node model.orders_analytics.dim_customer
+[0m03:30:35.694301 [debug] [Thread-3 (]: Began compiling node test.orders_analytics.not_null_stg_orders_product_category.5f48260899
+[0m03:30:35.696489 [debug] [Thread-1 (]: Finished running node test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64
+[0m03:30:35.697479 [debug] [Thread-4 (]: Began executing node test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5
+[0m03:30:35.699027 [debug] [Thread-2 (]: Finished running node model.orders_analytics.dim_customer
+[0m03:30:35.709569 [debug] [Thread-3 (]: Writing injected SQL for node "test.orders_analytics.not_null_stg_orders_product_category.5f48260899"
+[0m03:30:35.710603 [debug] [Thread-1 (]: Began running node test.orders_analytics.unique_stg_orders_order_id.e3b841c71a
+[0m03:30:35.712309 [debug] [Thread-4 (]: Finished running node test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5
+[0m03:30:35.713387 [debug] [Thread-2 (]: Began running node test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d
+[0m03:30:35.714743 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_stg_orders_order_id.81cfe2fe64, now test.orders_analytics.unique_stg_orders_order_id.e3b841c71a)
+[0m03:30:35.715728 [debug] [Thread-4 (]: Began running node test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d
+[0m03:30:35.716915 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.orders_analytics.dim_customer, now test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d)
+[0m03:30:35.719628 [debug] [Thread-2 (]: Began compiling node test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d
+[0m03:30:35.718893 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_stg_orders_customer_id.af79d5e4b5, now test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d)
+[0m03:30:35.720228 [debug] [Thread-3 (]: Began executing node test.orders_analytics.not_null_stg_orders_product_category.5f48260899
+[0m03:30:35.717958 [debug] [Thread-1 (]: Began compiling node test.orders_analytics.unique_stg_orders_order_id.e3b841c71a
+[0m03:30:35.729983 [debug] [Thread-2 (]: Writing injected SQL for node "test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d"
+[0m03:30:35.730631 [debug] [Thread-4 (]: Began compiling node test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d
+[0m03:30:35.731804 [debug] [Thread-3 (]: Finished running node test.orders_analytics.not_null_stg_orders_product_category.5f48260899
+[0m03:30:35.743681 [debug] [Thread-1 (]: Writing injected SQL for node "test.orders_analytics.unique_stg_orders_order_id.e3b841c71a"
+[0m03:30:35.752158 [debug] [Thread-4 (]: Writing injected SQL for node "test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d"
+[0m03:30:35.753236 [debug] [Thread-3 (]: Began running node model.orders_analytics.fct_orders
+[0m03:30:35.755655 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_stg_orders_product_category.5f48260899, now model.orders_analytics.fct_orders)
+[0m03:30:35.757594 [debug] [Thread-3 (]: Began compiling node model.orders_analytics.fct_orders
+[0m03:30:35.762399 [debug] [Thread-3 (]: Writing injected SQL for node "model.orders_analytics.fct_orders"
+[0m03:30:35.756631 [debug] [Thread-2 (]: Began executing node test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d
+[0m03:30:35.763880 [debug] [Thread-2 (]: Finished running node test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d
+[0m03:30:35.764533 [debug] [Thread-2 (]: Began running node test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc
+[0m03:30:35.766234 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_dim_product_category_product_category.7e26832e7d, now test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc)
+[0m03:30:35.765271 [debug] [Thread-1 (]: Began executing node test.orders_analytics.unique_stg_orders_order_id.e3b841c71a
+[0m03:30:35.768820 [debug] [Thread-1 (]: Finished running node test.orders_analytics.unique_stg_orders_order_id.e3b841c71a
+[0m03:30:35.767677 [debug] [Thread-2 (]: Began compiling node test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc
+[0m03:30:35.767037 [debug] [Thread-4 (]: Began executing node test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d
+[0m03:30:35.769695 [debug] [Thread-1 (]: Began running node test.orders_analytics.unique_dim_customer_customer_id.b42affccd1
+[0m03:30:35.770435 [debug] [Thread-3 (]: Began executing node model.orders_analytics.fct_orders
+[0m03:30:35.780960 [debug] [Thread-2 (]: Writing injected SQL for node "test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc"
+[0m03:30:35.782177 [debug] [Thread-4 (]: Finished running node test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d
+[0m03:30:35.782729 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.orders_analytics.unique_stg_orders_order_id.e3b841c71a, now test.orders_analytics.unique_dim_customer_customer_id.b42affccd1)
+[0m03:30:35.784349 [debug] [Thread-1 (]: Began compiling node test.orders_analytics.unique_dim_customer_customer_id.b42affccd1
+[0m03:30:35.783590 [debug] [Thread-3 (]: Finished running node model.orders_analytics.fct_orders
+[0m03:30:35.792305 [debug] [Thread-1 (]: Writing injected SQL for node "test.orders_analytics.unique_dim_customer_customer_id.b42affccd1"
+[0m03:30:35.793958 [debug] [Thread-2 (]: Began executing node test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc
+[0m03:30:35.795266 [debug] [Thread-2 (]: Finished running node test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc
+[0m03:30:35.796643 [debug] [Thread-2 (]: Began running node test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m03:30:35.797820 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_dim_customer_customer_id.9775012dfc, now test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0)
+[0m03:30:35.796022 [debug] [Thread-4 (]: Began running node model.orders_analytics.agg_daily_sales
+[0m03:30:35.797129 [debug] [Thread-3 (]: Began running node test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m03:30:35.798393 [debug] [Thread-2 (]: Began compiling node test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m03:30:35.798929 [debug] [Thread-1 (]: Began executing node test.orders_analytics.unique_dim_customer_customer_id.b42affccd1
+[0m03:30:35.799566 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.orders_analytics.unique_dim_product_category_product_category.3e65cc4a1d, now model.orders_analytics.agg_daily_sales)
+[0m03:30:35.800295 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.orders_analytics.fct_orders, now test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b)
+[0m03:30:35.808985 [debug] [Thread-2 (]: Writing injected SQL for node "test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0"
+[0m03:30:35.810566 [debug] [Thread-1 (]: Finished running node test.orders_analytics.unique_dim_customer_customer_id.b42affccd1
+[0m03:30:35.811597 [debug] [Thread-4 (]: Began compiling node model.orders_analytics.agg_daily_sales
+[0m03:30:35.812508 [debug] [Thread-3 (]: Began compiling node test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m03:30:35.813514 [debug] [Thread-1 (]: Began running node test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2
+[0m03:30:35.816858 [debug] [Thread-4 (]: Writing injected SQL for node "model.orders_analytics.agg_daily_sales"
+[0m03:30:35.824667 [debug] [Thread-3 (]: Writing injected SQL for node "test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b"
+[0m03:30:35.825414 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.orders_analytics.unique_dim_customer_customer_id.b42affccd1, now test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2)
+[0m03:30:35.827648 [debug] [Thread-1 (]: Began compiling node test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2
+[0m03:30:35.835128 [debug] [Thread-1 (]: Writing injected SQL for node "test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2"
+[0m03:30:35.826294 [debug] [Thread-2 (]: Began executing node test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m03:30:35.837293 [debug] [Thread-2 (]: Finished running node test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m03:30:35.838982 [debug] [Thread-2 (]: Began running node test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da
+[0m03:30:35.840521 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_fct_orders_order_id.4e687af8d0, now test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da)
+[0m03:30:35.838273 [debug] [Thread-4 (]: Began executing node model.orders_analytics.agg_daily_sales
+[0m03:30:35.839828 [debug] [Thread-3 (]: Began executing node test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m03:30:35.841122 [debug] [Thread-2 (]: Began compiling node test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da
+[0m03:30:35.841657 [debug] [Thread-1 (]: Began executing node test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2
+[0m03:30:35.842539 [debug] [Thread-4 (]: Finished running node model.orders_analytics.agg_daily_sales
+[0m03:30:35.843748 [debug] [Thread-3 (]: Finished running node test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m03:30:35.855828 [debug] [Thread-2 (]: Writing injected SQL for node "test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da"
+[0m03:30:35.857454 [debug] [Thread-1 (]: Finished running node test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2
+[0m03:30:35.858485 [debug] [Thread-4 (]: Began running node test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5
+[0m03:30:35.859711 [debug] [Thread-3 (]: Began running node test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m03:30:35.862425 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_fct_orders_customer_id.16fe324f7b, now test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5)
+[0m03:30:35.862984 [debug] [Thread-3 (]: Began compiling node test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m03:30:35.861719 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.orders_analytics.agg_daily_sales, now test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5)
+[0m03:30:35.967014 [debug] [Thread-4 (]: Began compiling node test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5
+[0m03:30:35.966369 [debug] [Thread-3 (]: Writing injected SQL for node "test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5"
+[0m03:30:35.967542 [debug] [Thread-2 (]: Began executing node test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da
+[0m03:30:35.860903 [debug] [Thread-1 (]: Began running node test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611
+[0m03:30:35.983097 [debug] [Thread-4 (]: Writing injected SQL for node "test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5"
+[0m03:30:35.985282 [debug] [Thread-2 (]: Finished running node test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da
+[0m03:30:35.987301 [debug] [Thread-2 (]: Began running node test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e
+[0m03:30:35.989205 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.orders_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customer_.d39c4721da, now test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e)
+[0m03:30:35.986114 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.orders_analytics.not_null_fct_orders_product_category.1766c71bb2, now test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611)
+[0m03:30:35.988131 [debug] [Thread-3 (]: Began executing node test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m03:30:35.989965 [debug] [Thread-2 (]: Began compiling node test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e
+[0m03:30:35.990865 [debug] [Thread-1 (]: Began compiling node test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611
+[0m03:30:35.992896 [debug] [Thread-3 (]: Finished running node test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m03:30:35.994049 [debug] [Thread-4 (]: Began executing node test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5
+[0m03:30:36.004245 [debug] [Thread-2 (]: Writing injected SQL for node "test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e"
+[0m03:30:36.015503 [debug] [Thread-1 (]: Writing injected SQL for node "test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611"
+[0m03:30:36.017338 [debug] [Thread-4 (]: Finished running node test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5
+[0m03:30:36.021087 [debug] [Thread-2 (]: Began executing node test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e
+[0m03:30:36.022907 [debug] [Thread-2 (]: Finished running node test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e
+[0m03:30:36.023966 [debug] [Thread-1 (]: Began executing node test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611
+[0m03:30:36.025727 [debug] [Thread-1 (]: Finished running node test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611
+[0m03:30:36.028593 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:30:36.029313 [debug] [MainThread]: Connection 'list_warehouse_main' was properly closed.
+[0m03:30:36.029810 [debug] [MainThread]: Connection 'test.orders_analytics.not_null_agg_daily_sales_sales_date.272e2df611' was properly closed.
+[0m03:30:36.030230 [debug] [MainThread]: Connection 'test.orders_analytics.unique_fct_orders_order_id.523ddb6ce5' was properly closed.
+[0m03:30:36.030651 [debug] [MainThread]: Connection 'test.orders_analytics.relationships_fct_orders_product_category__product_category__ref_dim_product_category_.923eb287c5' was properly closed.
+[0m03:30:36.031288 [debug] [MainThread]: Connection 'test.orders_analytics.unique_agg_daily_sales_sales_date.57c5bcad1e' was properly closed.
+[0m03:30:36.036604 [debug] [MainThread]: Command end result
+[0m03:30:36.199653 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\manifest.json
+[0m03:30:36.210204 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\semantic_manifest.json
+[0m03:30:36.357971 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\osi_document.json
+[0m03:30:36.377730 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\run_results.json
+[0m03:30:36.662120 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m03:30:36.662582 [info ] [MainThread]: Building catalog
+[0m03:30:36.673683 [debug] [ThreadPool]: Acquiring new duckdb connection 'warehouse.information_schema'
+[0m03:30:36.688605 [debug] [ThreadPool]: Using duckdb connection "warehouse.information_schema"
+[0m03:30:36.689189 [debug] [ThreadPool]: On warehouse.information_schema: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "orders_analytics", "target_name": "dev", "connection_name": "warehouse.information_schema"} */
+
+    
+    with tables as (
+      select *
+    from (
+        select
+            t.database_name as table_database,
+            t.schema_name as table_schema,
+            t.table_name as table_name,
+            'BASE TABLE' as table_type,
+            t.comment as table_comment
+        from duckdb_tables() t
+        where upper(t.database_name) = upper('warehouse')
+
+        union all
+
+        select
+            v.database_name as table_database,
+            v.schema_name as table_schema,
+            v.view_name as table_name,
+            'VIEW' as table_type,
+            v.comment as table_comment
+        from duckdb_views() v
+        where upper(v.database_name) = upper('warehouse')
+    ) catalog_tables
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_orders')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('fct_orders')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('dim_product_category')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('agg_daily_sales')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('dim_customer')
+                ))
+    
+    ),
+    columns as (
+      select *
+    from (
+        select
+            c.database_name as table_database,
+            c.schema_name as table_schema,
+            c.table_name as table_name,
+            c.column_name as column_name,
+            c.column_index as column_index,
+            c.data_type as column_type,
+            c.comment as column_comment
+        from duckdb_columns() c
+        where upper(c.database_name) = upper('warehouse')
+    ) catalog_columns
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_orders')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('fct_orders')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('dim_product_category')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('agg_daily_sales')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('dim_customer')
+                ))
+    
+    )
+    select
+        tables.table_database,
+        tables.table_schema,
+        tables.table_name,
+        tables.table_type,
+        tables.table_comment,
+        columns.column_name,
+        columns.column_index,
+        columns.column_type,
+        columns.column_comment,
+        null as table_owner
+    from tables
+    join columns using (table_database, table_schema, table_name)
+    order by table_schema, table_name, column_index
+  
+  
+[0m03:30:36.690023 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:30:36.744468 [debug] [ThreadPool]: SQL status: OK in 0.054 seconds
+[0m03:30:36.746949 [debug] [ThreadPool]: On warehouse.information_schema: Close
+[0m03:30:36.752641 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\catalog.json
+[0m03:30:36.796405 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\manifest.json
+[0m03:30:36.803201 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\semantic_manifest.json
+[0m03:30:36.808666 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\osi_document.json
+[0m03:30:36.809648 [info ] [MainThread]: Catalog written to C:\Users\USER\Downloads\data_processing_miniproject_lengkap\data_processing_miniproject\dbt_project\target\catalog.json
+[0m03:30:36.811943 [debug] [MainThread]: Command `dbt docs generate` succeeded at 03:30:36.811704 after 7.08 seconds
+[0m03:30:36.812437 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m03:30:36.812771 [debug] [MainThread]: Connection 'warehouse.information_schema' was properly closed.
+[0m03:30:36.813132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EBC8DD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EB8D7610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EB8D56D0>]}
+[0m03:30:36.813534 [debug] [MainThread]: Flushing usage events
+[0m03:30:38.412378 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:31:27.545376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75AB26120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F758718B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75D46F890>]}
+
+
+============================== 03:31:27.561080 | 7e32b1ec-55d5-432e-87a2-e719e85200e8 ==============================
+[0m03:31:27.561080 [info ] [MainThread]: Running with dbt=1.12.6
+[0m03:31:27.562786 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs serve --profiles-dir . --port 8080', 'log_path': 'C:\\Users\\USER\\Downloads\\data_processing_miniproject_lengkap\\data_processing_miniproject\\dbt_project\\logs'}
+[0m03:31:28.459759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7e32b1ec-55d5-432e-87a2-e719e85200e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75D7DA2C0>]}
+[0m03:31:28.653290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7e32b1ec-55d5-432e-87a2-e719e85200e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75B6DFDF0>]}

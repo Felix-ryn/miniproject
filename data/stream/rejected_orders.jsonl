@@ -1,0 +1,1 @@
+{"topic": "orders", "partition": 0, "offset": 1, "order_id": "O1001", "reason": "duplicate order_id (sink idempotency)"}

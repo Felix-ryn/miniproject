@@ -1,0 +1,8 @@
+orders_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "C:/Users/USER/Downloads/data_processing_miniproject_lengkap/data_processing_miniproject/data/warehouse.duckdb"
+      schema: main
+      threads: 4
